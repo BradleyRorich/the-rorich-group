@@ -4,7 +4,7 @@
 |-------|-------|
 | **Scope** | Brand colours + font applied to globals.css; full Home page built with all sections; shared CtaStrip component |
 | **Detail level** | Detailed |
-| **Status** | In Progress |
+| **Status** | Complete |
 
 ---
 
@@ -155,6 +155,15 @@ public/
 
 ---
 
+## Implementation Notes (decisions made)
+
+- **Brand colours:** Client hasn't provided assets yet. Implemented with a placeholder navy blue B2B palette (`oklch(0.38 0.12 252)` as primary/brand, `oklch(0.75 0.14 68)` as gold accent). To swap in real colours, update the `--primary`, `--brand`, `--brand-dark`, `--brand-light`, and `--gold` variables in `src/app/globals.css` `:root` block.
+- **Logo:** Text placeholder remains in Navbar. Replace the `<span>` with `<Image src="/logo.svg" .../>` once the client provides the file.
+- **CTA buttons in Hero/CtaStrip:** Use `bg-gold` (the amber accent) rather than `bg-primary` (navy) to create visual contrast against the dark brand background.
+- **No `shadcn/ui Button` component used for CTAs:** Hero and CtaStrip use plain `<Link>` with Tailwind classes to avoid the `asChild` complexity across sections and keep the markup clean.
+- **`CtaStrip` is shared:** Accepts `heading`, `subline`, `buttonLabel`, `buttonHref` props — reuse it unchanged in Phases 3 and 4.
+- **Card component added:** `pnpm dlx shadcn@latest add card` — used in `FeaturesGrid`.
+
 ## Exit Condition → Phase 3
 
-Home page is complete and visually representative of the final site. The CtaStrip component is ready for reuse. Brand tokens are set — inner pages can reference `bg-brand`, `text-primary`, etc. confidently.
+Home page complete (✓), build passes (✓), committed and pushed (✓). `CtaStrip` ready for reuse. Brand tokens available: `bg-brand`, `bg-brand-dark`, `bg-brand-light`, `text-primary`, `bg-gold`.
