@@ -128,15 +128,21 @@ export function ParticleCanvas() {
       animFrame = requestAnimationFrame(draw);
     };
 
+    // Listen on window so events reaching content on top of the canvas are still caught
     const onMouseMove = (e: MouseEvent) => {
       const rect = canvas.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
-    };
-
-    const onMouseLeave = () => {
-      mouse.x = -9999;
-      mouse.y = -9999;
+      if (
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom
+      ) {
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+      } else {
+        mouse.x = -9999;
+        mouse.y = -9999;
+      }
     };
 
     resize();
@@ -148,21 +154,19 @@ export function ParticleCanvas() {
       initParticles();
     });
     ro.observe(canvas);
-    canvas.addEventListener("mousemove", onMouseMove);
-    canvas.addEventListener("mouseleave", onMouseLeave);
+    window.addEventListener("mousemove", onMouseMove);
 
     return () => {
       cancelAnimationFrame(animFrame);
       ro.disconnect();
-      canvas.removeEventListener("mousemove", onMouseMove);
-      canvas.removeEventListener("mouseleave", onMouseLeave);
+      window.removeEventListener("mousemove", onMouseMove);
     };
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 h-full w-full"
+      className="absolute inset-0 h-full w-full pointer-events-none"
       aria-hidden
     />
   );
