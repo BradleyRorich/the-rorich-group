@@ -4,7 +4,7 @@
 |-------|-------|
 | **Scope** | Next.js 16 scaffold, Tailwind v4, shadcn/ui, security headers, root layout shell, pre-commit hooks, CI, Vercel preview deploy |
 | **Detail level** | Detailed |
-| **Status** | In Progress |
+| **Status** | Complete |
 
 ---
 
@@ -175,6 +175,15 @@ the-rorich-group/
 
 ---
 
+## Implementation Notes (decisions made)
+
+- **Scaffold path:** `pnpm create next-app` cannot run directly in a directory with uppercase letters in the name. Scaffolded into a tmp dir and rsynced the output into the project directory.
+- **shadcn/ui style:** `shadcn init -d` defaults to `base-nova`; manually updated `components.json` to `new-york` per spec.
+- **pnpm-workspace.yaml `allowBuilds`:** pnpm 11 requires explicit `allowBuilds.esbuild: true` (and `false` for sharp/unrs-resolver) or it aborts the install. Added alongside `ignoredBuiltDependencies`.
+- **Google Fonts in CSP:** Added `https://fonts.gstatic.com` to the `font-src` directive in `next.config.ts` to prevent font load failures.
+- **Turbopack root warning:** Added `turbopack: { root: __dirname }` to `next.config.ts` to silence the workspace root detection warning.
+- **Font:** Using `Inter` from `next/font/google` mapped to `--font-sans`. Swap in the client's brand font here in Phase 2.
+
 ## Exit Condition → Phase 2
 
-The shell compiles, deploys, and passes all checks. Brand colours and logo asset have been received from the client (required before Phase 2 begins).
+Shell compiles (✓), lint passes (✓), typecheck passes (✓), build passes (✓), git initialised (✓). Awaiting client logo and brand colours before Phase 2 begins.

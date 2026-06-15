@@ -218,7 +218,7 @@ Security headers per the vibe-spec deployment reference:
 
 | # | File | Scope |
 |---|------|-------|
-| 1 | `docs/plans/phase-1-foundation.md` | Scaffold Next.js 16 project with pnpm, Tailwind v4, shadcn/ui, TypeScript strict, security headers, root layout (Navbar + Footer shell), `.env.example`. Site compiles, deploys to Vercel preview, and renders a blank home route. |
+| 1 ✅ | `docs/plans/phase-1-foundation.md` | Scaffold Next.js 16 project with pnpm, Tailwind v4, shadcn/ui, TypeScript strict, security headers, root layout (Navbar + Footer shell), `.env.example`. Site compiles, deploys to Vercel preview, and renders a blank home route. |
 | 2 | `docs/plans/phase-2-home-and-brand.md` | Apply client brand colours and font to `globals.css`. Build the full Home page: Hero, Three Pillars, Features Grid, About Teaser, CTA Strip. Shared `CtaStrip` component reused across later pages. |
 | 3 | `docs/plans/phase-3-content-pages.md` | Implement About, Services, Industries, and Products pages with all content data files (`services.ts`, `industries.ts`, `products.ts`). Shared `ServiceCard`, `IndustryPanel`, and `ProductCard` components. |
 | 4 | `docs/plans/phase-4-contact-and-legal.md` | Contact page: contact details display, Zod-validated enquiry form, stub `/api/contact` route (returns 200, email deferred). Legal Notice and Privacy Policy pages with POPIA-compliant placeholder templates. |
