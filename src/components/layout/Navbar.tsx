@@ -32,7 +32,7 @@ const dropdownLinks = [
   {
     label: "Industries",
     href: "/industries",
-    items: industries.map((i) => ({ label: i.title, href: "/industries" })),
+    items: industries.map((i) => ({ label: i.title, href: `/industries/${i.id}` })),
   },
   {
     label: "Products",
