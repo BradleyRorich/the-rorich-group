@@ -3,8 +3,8 @@
 | Field | Value |
 |-------|-------|
 | **Scope** | Brand colours + font applied to globals.css; full Home page built with all sections; shared CtaStrip component |
-| **Detail level** | High-level |
-| **Status** | Planned |
+| **Detail level** | Detailed |
+| **Status** | In Progress |
 
 ---
 
