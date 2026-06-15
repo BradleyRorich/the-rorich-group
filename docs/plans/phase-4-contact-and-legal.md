@@ -3,8 +3,8 @@
 | Field | Value |
 |-------|-------|
 | **Scope** | Contact page with Zod-validated form and stub API route; Legal Notice and Privacy Policy pages with POPIA-compliant templates |
-| **Detail level** | High-level |
-| **Status** | Planned |
+| **Detail level** | Detailed |
+| **Status** | In Progress |
 
 ---
 
