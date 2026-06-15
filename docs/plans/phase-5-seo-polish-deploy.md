@@ -3,8 +3,8 @@
 | Field | Value |
 |-------|-------|
 | **Scope** | Per-page metadata, OG tags, favicon, web manifest, responsive audit, Lighthouse 90+ pass, production deploy to rorichgroup.co.za |
-| **Detail level** | High-level |
-| **Status** | Planned |
+| **Detail level** | Detailed |
+| **Status** | In Progress |
 
 ---
 

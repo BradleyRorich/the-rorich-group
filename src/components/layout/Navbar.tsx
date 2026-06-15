@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTitle,
@@ -62,18 +63,19 @@ export function Navbar() {
             </SheetHeader>
             <nav className="flex flex-col gap-4 p-4">
               {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "text-base font-medium transition-colors hover:text-primary",
-                    pathname === link.href
-                      ? "text-foreground"
-                      : "text-muted-foreground"
-                  )}
-                >
-                  {link.label}
-                </Link>
+                <SheetClose key={link.href} asChild>
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      "text-base font-medium transition-colors hover:text-primary",
+                      pathname === link.href
+                        ? "text-foreground"
+                        : "text-muted-foreground"
+                    )}
+                  >
+                    {link.label}
+                  </Link>
+                </SheetClose>
               ))}
             </nav>
           </SheetContent>
