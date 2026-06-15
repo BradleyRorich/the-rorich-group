@@ -7,7 +7,7 @@ import { CtaStrip } from "@/components/home/CtaStrip";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Browse The Rorich Group's industrial machinery and printing equipment categories. Enquiry-driven — contact us for pricing and availability.",
+    "Browse The Rorich Group's print products — business cards, flyers, NCR carbon books, and black labels. Contact us for a free quote.",
 };
 
 export default function ProductsPage() {
@@ -16,7 +16,7 @@ export default function ProductsPage() {
       <PageHero
         eyebrow="Product Range"
         heading="Our Products"
-        subline="Enquiry-driven — all products are sourced to your specification. Contact us for pricing and availability."
+        subline="Every job is quoted to your specification. Contact us for a free, no-obligation print quote."
       />
 
       <section className="py-20">
@@ -30,9 +30,9 @@ export default function ProductsPage() {
       </section>
 
       <CtaStrip
-        heading="Can't find what you're looking for?"
-        subline="We specialise in custom sourcing. If it exists, we can find it."
-        buttonLabel="Request a Product"
+        heading="Need something custom?"
+        subline="We quote on any print job, no matter how unique. Get in touch and let's talk."
+        buttonLabel="Request a Quote"
         buttonHref="/contact"
       />
     </>

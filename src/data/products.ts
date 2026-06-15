@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Printer, Layers, Tag, Scale, Forklift } from "lucide-react";
+import { CreditCard, Sparkles, Layers, BookOpen, Tag } from "lucide-react";
 
 export type Product = {
   id: string;
@@ -11,43 +11,43 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    id: "office-printers",
-    icon: Printer,
-    title: "Office & Desktop Printers",
+    id: "standard-business-cards",
+    icon: CreditCard,
+    title: "Standard Business Cards",
     description:
-      "A range of compact and mid-range printers suited to small and medium businesses. Reliable, cost-effective, and easy to maintain — ideal for day-to-day document and label printing.",
-    useCase: "Small to medium business print environments",
+      "Full-colour business cards on 350gsm silk or gloss coated stock. 85×55mm standard size, printed both sides. Minimum 100 cards with fast turnaround available.",
+    useCase: "Professionals, sales teams, small businesses",
   },
   {
-    id: "flexographic",
+    id: "premium-business-cards",
+    icon: Sparkles,
+    title: "Premium Business Cards",
+    description:
+      "Elevate your brand with matte lamination, soft-touch coating, spot UV highlights, or embossed finishes on premium 400gsm stock. Custom sizes and rounded corners available.",
+    useCase: "Executive branding, premium first impressions",
+  },
+  {
+    id: "flyers-brochures",
     icon: Layers,
-    title: "Industrial Flexographic Presses",
+    title: "Flyers & Brochures",
     description:
-      "High-performance flexographic printing presses for large-scale label, flexible packaging, and corrugated board production. Sourced from leading manufacturers with a track record in quality and throughput.",
-    useCase: "High-volume label and flexible packaging production",
+      "A4 and A5 flyers on 130gsm or 170gsm coated gloss or silk. Bi-fold and tri-fold brochures also available. Sharp, vivid colour reproduction for marketing and promotional use.",
+    useCase: "Marketing campaigns, promotions, events",
   },
   {
-    id: "label-packaging",
+    id: "carbon-books",
+    icon: BookOpen,
+    title: "NCR Carbon Books",
+    description:
+      "Duplicate (2-part) and triplicate (3-part) NCR carbon books for invoices, order forms, delivery notes, and receipts. Custom numbering and design assistance included.",
+    useCase: "Invoice books, order forms, delivery notes, receipts",
+  },
+  {
+    id: "black-labels",
     icon: Tag,
-    title: "Label & Packaging Machinery",
+    title: "Black Labels",
     description:
-      "From label applicators to shrink-wrap and flow-wrap machines, our packaging machinery range covers the full spectrum of FMCG and retail packaging needs.",
-    useCase: "FMCG and retail product labelling and packaging",
-  },
-  {
-    id: "weigh-bridges",
-    icon: Scale,
-    title: "Weigh Bridges & Industrial Scales",
-    description:
-      "Robust weighing solutions for mining, agriculture, and logistics operations. Includes truck weigh bridges, platform scales, and custom weighing instrumentation for any environment.",
-    useCase: "Mining, agriculture, and logistics weighing operations",
-  },
-  {
-    id: "material-handling",
-    icon: Forklift,
-    title: "Material Handling Equipment",
-    description:
-      "Forklifts, pallet jacks, conveyors, and custom handling solutions to keep your production floor and warehouse running efficiently. Sourced to spec for your specific load and environment.",
-    useCase: "Factory floor movement, warehousing, and logistics",
+      "Custom black printed labels in any shape or size. Suitable for product labelling, shelf marking, asset management, and retail pricing. Permanent adhesive on quality label stock.",
+    useCase: "Product labels, asset tags, retail pricing, shelving",
   },
 ];

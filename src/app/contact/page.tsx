@@ -6,7 +6,7 @@ import { ContactForm } from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with The Rorich Group to discuss your industrial, printing, packaging, or logistics requirements.",
+    "Get in touch with The Rorich Group for a free quote on business cards, flyers, documents, carbon books, and label printing.",
 };
 
 const contactDetails = [
@@ -36,7 +36,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Get in Touch"
         heading="Contact Us"
-        subline="Have a question or ready to start? Reach out and we'll get back to you within one business day."
+        subline="Ready to print? Send us your details and we'll get back to you with a free quote within one business day."
       />
 
       <section className="py-20">
@@ -52,7 +52,7 @@ export default function ContactPage() {
                   const Icon = detail.icon;
                   return (
                     <div key={detail.label} className="flex items-start gap-4">
-                      <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                      <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
                         <Icon className="size-5" />
                       </div>
                       <div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                         {detail.href ? (
                           <a
                             href={detail.href}
-                            className="font-medium text-foreground hover:text-primary transition-colors"
+                            className="font-medium text-foreground hover:text-gold transition-colors"
                           >
                             {detail.value}
                           </a>
@@ -78,13 +78,13 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-10 rounded-xl bg-brand-light p-6">
-                <p className="text-sm font-semibold text-primary mb-2">
+                <p className="text-sm font-semibold text-foreground mb-2">
                   What to expect
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• We respond to all enquiries within one business day</li>
-                  <li>• No obligation — just a conversation about your needs</li>
-                  <li>• We quote on custom sourcing requests at no charge</li>
+                  <li>• No obligation — just a conversation about your print needs</li>
+                  <li>• We provide free quotes on all print jobs</li>
                 </ul>
               </div>
             </div>

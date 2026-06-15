@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Globe, Printer, Truck, Factory, Wrench, Monitor } from "lucide-react";
+import { CreditCard, Layers, FileText, BookOpen, Tag } from "lucide-react";
 
 export type Service = {
   id: string;
@@ -10,45 +10,38 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    id: "sourcing",
-    icon: Globe,
-    title: "Global Sourcing",
+    id: "business-cards",
+    icon: CreditCard,
+    title: "Business Card Printing",
     description:
-      "We connect you to a network of trusted manufacturers across China, India, America, and Europe. From heavy industrial machinery to packaging equipment, we source quality products at competitive prices.",
+      "Make a lasting first impression with professionally printed business cards. Available in standard, matte-laminated, spot UV, and premium thick stock finishes — full colour, both sides.",
   },
   {
-    id: "printing",
-    icon: Printer,
-    title: "Printing & Packaging",
+    id: "flyers",
+    icon: Layers,
+    title: "Flyer & Brochure Printing",
     description:
-      "High-quality labels, flexible packaging, and industrial paper printing tailored to diverse consumer needs. From compact desktop solutions to large-scale flexographic presses.",
+      "Vibrant, high-resolution flyers and brochures printed on quality coated stock. Available in A4, A5, and DL formats, single or double-sided, with a range of paper weights to suit your budget.",
   },
   {
-    id: "logistics",
-    icon: Truck,
-    title: "Logistics & Delivery",
+    id: "documents",
+    icon: FileText,
+    title: "Document Printing",
     description:
-      "Our outsourced logistics partners ensure fast, reliable worldwide delivery. Whether it's a full container or a single machine, your order gets where it needs to be, on time.",
+      "Crisp, clear document printing for reports, manuals, training materials, and business correspondence. Mono and full-colour options available, with binding and finishing on request.",
   },
   {
-    id: "industrial",
-    icon: Factory,
-    title: "Industrial Solutions",
+    id: "carbon-books",
+    icon: BookOpen,
+    title: "Carbon Book Printing",
     description:
-      "From weigh bridges to custom scales and material handling equipment, we provide measurement and movement solutions for any production environment or industry sector.",
+      "Custom-designed NCR (no-carbon-required) duplicate and triplicate books for invoices, order forms, delivery notes, and receipts. Sequentially numbered and finished with a sturdy cardboard back.",
   },
   {
-    id: "custom",
-    icon: Wrench,
-    title: "Custom Projects",
+    id: "black-labels",
+    icon: Tag,
+    title: "Black Label Printing",
     description:
-      "Need something specialised or unconventional? We handle custom orders and sourcing for industrial projects — including hard-to-find machinery and niche components for unique applications.",
-  },
-  {
-    id: "web",
-    icon: Monitor,
-    title: "Web & Business Outsourcing",
-    description:
-      "Beyond hardware, we support businesses with web development and general business outsourcing services — helping you streamline operations and focus on what you do best.",
+      "Custom black labels printed to your exact specification — ideal for product labelling, asset tagging, shelf marking, and retail pricing. Permanent adhesive on quality label stock in any size or shape.",
   },
 ];

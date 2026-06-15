@@ -21,8 +21,8 @@ export function Footer() {
             <p className="text-lg font-bold text-white">The Rorich Group</p>
             <p className="text-sm text-gold">Your Business Partner</p>
             <p className="text-sm text-white/50 leading-relaxed">
-              Connecting businesses with industrial and printing solutions across
-              Africa and beyond.
+              Quality printing services across South Africa — business cards,
+              flyers, carbon books, labels, and more.
             </p>
           </div>
 

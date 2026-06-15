@@ -7,7 +7,7 @@ import { CtaStrip } from "@/components/home/CtaStrip";
 export const metadata: Metadata = {
   title: "Industries We Serve",
   description:
-    "The Rorich Group serves FMCG, agriculture, food processing, and mining industries across South Africa and beyond with tailored industrial and printing solutions.",
+    "The Rorich Group provides printing services to small businesses, corporates, retail, and events across South Africa.",
 };
 
 export default function IndustriesPage() {
@@ -16,7 +16,7 @@ export default function IndustriesPage() {
       <PageHero
         eyebrow="Industries"
         heading="Industries We Serve"
-        subline="Tailored solutions for the sectors that power the South African economy."
+        subline="Quality print solutions for businesses of every size and sector."
       />
 
       <section className="py-20">
@@ -30,8 +30,8 @@ export default function IndustriesPage() {
       </section>
 
       <CtaStrip
-        heading="Serving your industry"
-        subline="Don't see your sector listed? Get in touch — we work across many more verticals."
+        heading="Don't see your industry?"
+        subline="We print for all kinds of businesses — get in touch and let's find the right solution for you."
         buttonLabel="Talk to Us"
         buttonHref="/contact"
       />

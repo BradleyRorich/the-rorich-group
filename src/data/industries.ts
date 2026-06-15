@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { ShoppingCart, Leaf, HardHat } from "lucide-react";
+import { Briefcase, Building2, Megaphone } from "lucide-react";
 
 export type Industry = {
   id: string;
@@ -11,42 +11,42 @@ export type Industry = {
 
 export const industries: Industry[] = [
   {
-    id: "fmcg",
-    icon: ShoppingCart,
-    title: "FMCG / Retail",
+    id: "small-business",
+    icon: Briefcase,
+    title: "Small Business & Entrepreneurs",
     description:
-      "Fast-moving consumer goods and retail businesses depend on high-throughput packaging, accurate labelling, and rapid delivery cycles. We supply the machinery and logistics to keep your production lines moving.",
+      "Whether you're just starting out or growing your brand, quality printed material helps you look professional from day one. We help small businesses make a strong impression without breaking the budget.",
     highlights: [
-      "Label printers and applicators",
-      "Flexible packaging machinery",
-      "High-speed production line equipment",
-      "Fast-cycle outsourced delivery",
+      "Business cards and branded stationery",
+      "Promotional flyers for new launches",
+      "NCR invoice and receipt books",
+      "Custom product and pricing labels",
     ],
   },
   {
-    id: "agriculture",
-    icon: Leaf,
-    title: "Agriculture & Food Processing",
+    id: "corporate",
+    icon: Building2,
+    title: "Corporate & Professional Services",
     description:
-      "The agriculture and food processing sector demands hygienic packaging solutions, precise weighing equipment, and cold-chain-aware logistics. We source and supply the right tools for your environment.",
+      "Consistent, high-quality print that reflects your corporate identity. From boardroom documents to client-facing brochures and executive business cards, we handle volume runs with precision and care.",
     highlights: [
-      "Hygienic and food-safe packaging machinery",
-      "Precision weigh bridges and scales",
-      "Produce and bulk labelling solutions",
-      "Temperature-sensitive logistics partners",
+      "High-volume document and report printing",
+      "Branded brochures and company profiles",
+      "Premium business cards for executives",
+      "Custom stationery and letterheads",
     ],
   },
   {
-    id: "mining",
-    icon: HardHat,
-    title: "Mining & Heavy Industry",
+    id: "retail-events",
+    icon: Megaphone,
+    title: "Retail & Events",
     description:
-      "Mining and heavy industry operations require robust, durable equipment built for demanding environments. From large-scale weigh bridges to custom industrial printing and specialised component sourcing, we deliver.",
+      "Attract customers and drive sales with vibrant printed material. From in-store shelf labels to event flyers, we produce eye-catching print that works hard for your brand every time.",
     highlights: [
-      "Heavy-duty weigh bridges and truck scales",
-      "Industrial measurement and instrumentation",
-      "Custom and hard-to-find component sourcing",
-      "Large-format and industrial printing solutions",
+      "Promotional and event flyers",
+      "Product labels and shelf tags",
+      "Point-of-sale printed material",
+      "Custom black labels for retail products",
     ],
   },
 ];

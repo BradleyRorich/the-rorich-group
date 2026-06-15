@@ -10,18 +10,17 @@ export function AboutTeaser() {
             About Us
           </p>
           <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
-            Your Dependable Business Partner
+            Your Trusted Print Partner
           </h2>
           <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
-            The Rorich Group connects businesses with reliable industrial and
-            printing solutions. We specialise in production machinery, office and
-            flexographic printers, and weighing equipment — sourced from trusted
-            manufacturers across China and global markets.
+            The Rorich Group is a South African printing company specialising in
+            business cards, flyers, documents, NCR carbon books, and black
+            labels. We help businesses of every size present themselves
+            professionally with print that makes an impression.
           </p>
           <p className="mb-8 text-muted-foreground">
-            Our focus is on delivering quality, value, and efficiency — managing
-            everything from sourcing and procurement to outsourced logistics and
-            delivery.
+            Our focus is on quality, fast turnaround, and competitive pricing —
+            giving you print you can be proud of, delivered when you need it.
           </p>
           <Link
             href="/about"

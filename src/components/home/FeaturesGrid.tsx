@@ -1,11 +1,4 @@
-import {
-  Layers,
-  Shield,
-  Globe,
-  Factory,
-  Wrench,
-  Truck,
-} from "lucide-react";
+import { CreditCard, Layers, FileText, BookOpen, Tag, Printer } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -15,40 +8,40 @@ import {
 
 const features = [
   {
+    icon: CreditCard,
+    title: "Business Cards",
+    description:
+      "Standard and premium business cards that make a lasting first impression — matte, gloss, spot UV, and more.",
+  },
+  {
     icon: Layers,
-    title: "Product Range",
+    title: "Flyers & Brochures",
     description:
-      "From compact office printers to large-scale production machinery tailored to high-volume operations.",
+      "Full-colour A4, A5, and DL flyers and brochures on quality coated stock, single or double-sided.",
   },
   {
-    icon: Shield,
-    title: "Build Quality",
+    icon: FileText,
+    title: "Document Printing",
     description:
-      "Every machine we supply is built with precision and durability in mind, delivering consistent long-term reliability.",
+      "Crisp mono and colour document printing for reports, manuals, proposals, and business correspondence.",
   },
   {
-    icon: Globe,
-    title: "Global Sourcing",
+    icon: BookOpen,
+    title: "Carbon Books",
     description:
-      "Our sourcing network spans trusted manufacturers across China and beyond, ensuring top quality at competitive prices.",
+      "Custom NCR duplicate and triplicate books for invoices, order forms, receipts, and delivery notes.",
   },
   {
-    icon: Factory,
-    title: "Industrial Solutions",
+    icon: Tag,
+    title: "Black Labels",
     description:
-      "From weigh bridges to custom scales, we provide measurement and movement solutions for any production environment.",
+      "Custom black labels in any size or shape — product labelling, asset tags, shelf markers, and retail pricing.",
   },
   {
-    icon: Wrench,
-    title: "Custom Projects",
+    icon: Printer,
+    title: "Custom Print Jobs",
     description:
-      "Need something specialised? We handle custom orders and sourcing for hard-to-find machinery and niche components.",
-  },
-  {
-    icon: Truck,
-    title: "Logistics & Delivery",
-    description:
-      "Our outsourced logistics partners ensure fast, reliable worldwide delivery — whether a full container or a single machine.",
+      "Need something unique? We quote on any print job. If it can be printed, we can do it.",
   },
 ];
 
@@ -58,11 +51,10 @@ export function FeaturesGrid() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Why Choose The Rorich Group
+            What We Print
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Quality, value, and efficiency — managing everything from sourcing
-            to delivery.
+            Everything your business needs, printed right.
           </p>
         </div>
 

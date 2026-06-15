@@ -7,16 +7,16 @@ import { CtaStrip } from "@/components/home/CtaStrip";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "From global industrial machinery sourcing to print, packaging, logistics, and business outsourcing — explore The Rorich Group's full service offering.",
+    "Business card printing, flyers, documents, NCR carbon books, and black labels — explore The Rorich Group's full print offering.",
 };
 
 export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="What We Do"
+        eyebrow="What We Print"
         heading="Our Services"
-        subline="End-to-end solutions across sourcing, printing, logistics, and beyond — all under one roof."
+        subline="From business cards to carbon books — everything your business needs, printed right."
       />
 
       <section className="py-20">
@@ -30,9 +30,9 @@ export default function ServicesPage() {
       </section>
 
       <CtaStrip
-        heading="Need a custom solution?"
-        subline="Every business is different. Tell us your challenge and we'll find the right fit."
-        buttonLabel="Get in Touch"
+        heading="Not sure what you need?"
+        subline="Tell us about your project and we'll recommend the best print option for your budget."
+        buttonLabel="Get a Free Quote"
         buttonHref="/contact"
       />
     </>

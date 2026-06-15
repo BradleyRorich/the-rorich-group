@@ -1,23 +1,23 @@
-import { Globe, Printer, Truck } from "lucide-react";
+import { Sparkles, Zap, Award } from "lucide-react";
 
 const pillars = [
   {
-    icon: Globe,
-    title: "Your Partner in Sourcing",
+    icon: Award,
+    title: "Premium Quality",
     description:
-      "Discover our extensive range of suppliers across China, India, America, and Europe, providing top-quality heavy and packaging machinery tailored to your needs.",
+      "Every job is printed with precision, vivid colour accuracy, and sharp detail — from your first proof to the final product. No compromises.",
   },
   {
-    icon: Printer,
-    title: "Your Partner in Printing",
+    icon: Zap,
+    title: "Fast Turnaround",
     description:
-      "The Rorich Group excels in print and packaging solutions, offering high-quality labels, flexible packaging, and industrial paper printing to meet diverse consumer needs.",
+      "We understand deadlines. Quick production and reliable delivery mean your printed material is ready when your business needs it.",
   },
   {
-    icon: Truck,
-    title: "Your Partner in Logistics",
+    icon: Sparkles,
+    title: "Competitive Pricing",
     description:
-      "Discover a variety of logistics solutions designed to guarantee your packages arrive promptly and securely, ensuring complete satisfaction with our reliable delivery services.",
+      "Quality print shouldn't break the bank. We offer competitive rates on every run — small batches or large volumes — without cutting corners.",
   },
 ];
 
@@ -27,10 +27,10 @@ export function ThreePillars() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Three Pillars of Partnership
+            Why Print With Us
           </h2>
           <p className="mt-4 text-muted-foreground">
-            End-to-end solutions from source to delivery.
+            Quality, speed, and value — every single job.
           </p>
         </div>
 

@@ -21,21 +21,20 @@ export function Hero() {
         <div className="max-w-3xl">
           {/* Eyebrow */}
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-sm font-medium text-gold">
-            South Africa&apos;s B2B Business Partner
+            South Africa&apos;s Print Specialists
             <span className="inline-block size-1.5 rounded-full bg-gold" />
           </p>
 
           {/* Headline */}
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Your Business{" "}
-            <span className="text-gold">Partner</span>
+            Print That Makes{" "}
+            <span className="text-gold">An Impression</span>
           </h1>
 
           {/* Subline */}
           <p className="mb-10 max-w-xl text-lg leading-relaxed text-white/65">
-            Connecting businesses with world-class industrial printing solutions,
-            packaging machinery, global sourcing, and reliable logistics — from
-            China to your door.
+            Business cards, flyers, documents, carbon books, and black labels —
+            printed to the highest standard, delivered when you need them.
           </p>
 
           {/* CTAs */}
@@ -44,7 +43,7 @@ export function Hero() {
               href="/contact"
               className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-semibold text-brand shadow-lg shadow-gold/20 transition-all hover:brightness-110 hover:shadow-gold/30"
             >
-              Get in Touch
+              Get a Free Quote
               <ArrowRight className="size-4" />
             </Link>
             <Link
