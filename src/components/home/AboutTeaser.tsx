@@ -6,7 +6,7 @@ export function AboutTeaser() {
     <section className="bg-muted/40 py-20">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-gold">
             About Us
           </p>
           <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
@@ -25,7 +25,7 @@ export function AboutTeaser() {
           </p>
           <Link
             href="/about"
-            className="inline-flex items-center gap-2 font-semibold text-primary hover:underline"
+            className="inline-flex items-center gap-2 font-semibold text-foreground hover:text-gold transition-colors"
           >
             Learn More About Us
             <ArrowRight className="size-4" />

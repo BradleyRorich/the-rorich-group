@@ -26,10 +26,10 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-brand/95 backdrop-blur supports-[backdrop-filter]:bg-brand/90">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-lg font-bold tracking-tight">
+          <span className="text-lg font-bold tracking-tight text-white">
             The Rorich Group
           </span>
         </Link>
@@ -41,10 +41,10 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-gold",
                 pathname === link.href
-                  ? "text-foreground"
-                  : "text-muted-foreground"
+                  ? "text-gold"
+                  : "text-white/70"
               )}
             >
               {link.label}
@@ -54,12 +54,12 @@ export function Navbar() {
 
         {/* Mobile nav */}
         <Sheet>
-          <SheetTrigger className="md:hidden" aria-label="Open menu">
+          <SheetTrigger className="md:hidden text-white/80 hover:text-white" aria-label="Open menu">
             <Menu className="size-5" />
           </SheetTrigger>
-          <SheetContent side="right">
+          <SheetContent side="right" className="bg-brand border-white/10">
             <SheetHeader>
-              <SheetTitle>The Rorich Group</SheetTitle>
+              <SheetTitle className="text-white">The Rorich Group</SheetTitle>
             </SheetHeader>
             <nav className="flex flex-col gap-4 p-4">
               {navLinks.map((link) => (
@@ -67,10 +67,10 @@ export function Navbar() {
                   <Link
                     href={link.href}
                     className={cn(
-                      "text-base font-medium transition-colors hover:text-primary",
+                      "text-base font-medium transition-colors hover:text-gold",
                       pathname === link.href
-                        ? "text-foreground"
-                        : "text-muted-foreground"
+                        ? "text-gold"
+                        : "text-white/70"
                     )}
                   >
                     {link.label}

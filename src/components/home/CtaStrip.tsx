@@ -23,7 +23,7 @@ export function CtaStrip({
         <p className="mb-8 text-brand-foreground/75">{subline}</p>
         <Link
           href={buttonHref}
-          className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
+          className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-semibold text-brand shadow-sm transition-all hover:brightness-110"
         >
           {buttonLabel}
           <ArrowRight className="size-4" />

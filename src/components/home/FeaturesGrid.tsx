@@ -72,10 +72,10 @@ export function FeaturesGrid() {
             return (
               <Card
                 key={feature.title}
-                className="group border-border/60 transition-shadow hover:shadow-md"
+                className="group border-border/60 transition-all hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5"
               >
                 <CardHeader className="pb-3">
-                  <div className="mb-3 flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                  <div className="mb-3 flex size-10 items-center justify-center rounded-lg bg-gold/10 text-gold">
                     <Icon className="size-5" />
                   </div>
                   <CardTitle className="text-base">{feature.title}</CardTitle>

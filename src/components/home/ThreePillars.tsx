@@ -42,7 +42,7 @@ export function ThreePillars() {
                 key={pillar.title}
                 className="flex flex-col items-center text-center"
               >
-                <div className="mb-5 flex size-14 items-center justify-center rounded-full bg-brand text-brand-foreground shadow-md">
+                <div className="mb-5 flex size-14 items-center justify-center rounded-full bg-brand shadow-lg shadow-brand/20 text-gold">
                   <Icon className="size-7" />
                 </div>
                 <h3 className="mb-3 text-lg font-semibold">{pillar.title}</h3>
