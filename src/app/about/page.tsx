@@ -64,7 +64,7 @@ export default function AboutPage() {
               <p>
                 The Rorich Group is a South African printing company
                 specialising in business cards, flyers, documents, NCR carbon
-                books, and black labels. We work with small businesses,
+                books, and blank labels. We work with small businesses,
                 corporates, retailers, and event organisers who need quality
                 printed material they can rely on.
               </p>

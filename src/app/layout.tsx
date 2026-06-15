@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | The Rorich Group",
   },
   description:
-    "The Rorich Group delivers quality printing services across South Africa — business cards, flyers, documents, NCR carbon books, and black labels.",
+    "The Rorich Group delivers quality printing services across South Africa — business cards, flyers, documents, NCR carbon books, and blank labels.",
   openGraph: {
     siteName: "The Rorich Group",
     type: "website",

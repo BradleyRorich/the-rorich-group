@@ -46,7 +46,7 @@ export const industries: Industry[] = [
       "Promotional and event flyers",
       "Product labels and shelf tags",
       "Point-of-sale printed material",
-      "Custom black labels for retail products",
+      "Custom blank labels for retail products",
     ],
   },
 ];

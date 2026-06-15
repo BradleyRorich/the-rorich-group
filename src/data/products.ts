@@ -205,15 +205,18 @@ export const products: Product[] = [
     category: "Labels & Forms",
   },
   {
-    id: "black-labels",
+    id: "blank-labels",
     icon: Tag,
-    title: "Black Labels",
+    title: "Blank Labels",
     description:
-      "Custom black printed labels in any shape or size. Suitable for product labelling, shelf marking, asset management, and retail pricing. Permanent adhesive on quality label stock.",
-    useCase: "Product labels, asset tags, retail pricing, shelving",
+      "Self-adhesive blank labels supplied in rolls or sheets, in a wide range of standard and custom sizes. Compatible with thermal, inkjet, and laser printers — or used for hand-writing. Permanent or removable adhesive options available on white, clear, or kraft label stock.",
+    useCase: "Product labelling, stock management, retail pricing, asset tags",
     category: "Labels & Forms",
   },
 ];
+
+export const categorySlug = (cat: string) =>
+  cat.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-$/g, "");
 
 export const productCategories = [
   "Business Stationery",

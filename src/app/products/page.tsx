@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Printer } from "lucide-react";
-import { products, productCategories } from "@/data/products";
+import { products, productCategories, categorySlug } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 import { PageHero } from "@/components/PageHero";
 import { CtaStrip } from "@/components/home/CtaStrip";
@@ -50,7 +50,7 @@ export default function ProductsPage() {
                 (p) => p.category === category
               );
               return (
-                <section key={category}>
+                <section key={category} id={categorySlug(category)}>
                   <div className="mb-8">
                     <h2 className="text-2xl font-bold tracking-tight">
                       {category}

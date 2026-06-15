@@ -40,8 +40,8 @@ export const services: Service[] = [
   {
     id: "black-labels",
     icon: Tag,
-    title: "Black Label Printing",
+    title: "Blank Label Printing",
     description:
-      "Custom black labels printed to your exact specification — ideal for product labelling, asset tagging, shelf marking, and retail pricing. Permanent adhesive on quality label stock in any size or shape.",
+      "Blank self-adhesive labels supplied in a range of standard and custom sizes — ready for thermal printing, inkjet printing, or hand-writing. Ideal for product labelling, stock management, asset tagging, and retail pricing.",
   },
 ];

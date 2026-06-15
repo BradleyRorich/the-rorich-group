@@ -33,9 +33,9 @@ const features = [
   },
   {
     icon: Tag,
-    title: "Labels & Carbon Books",
+    title: "Blank Labels & Carbon Books",
     description:
-      "Custom black labels in any size, plus NCR duplicate and triplicate carbon books for invoices, order forms, and delivery notes.",
+      "Blank self-adhesive labels in rolls or sheets for thermal, inkjet, or hand-writing, plus NCR carbon books for invoices, order forms, and delivery notes.",
   },
   {
     icon: Package,

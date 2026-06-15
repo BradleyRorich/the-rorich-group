@@ -33,7 +33,7 @@ export function Hero() {
 
           {/* Subline */}
           <p className="mb-10 max-w-xl text-lg leading-relaxed text-white/65">
-            Business cards, flyers, documents, carbon books, and black labels —
+            Business cards, flyers, documents, carbon books, and blank labels —
             printed to the highest standard, delivered when you need them.
           </p>
 
