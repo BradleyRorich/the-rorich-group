@@ -4,7 +4,7 @@
 |-------|-------|
 | **Scope** | Contact page with Zod-validated form and stub API route; Legal Notice and Privacy Policy pages with POPIA-compliant templates |
 | **Detail level** | Detailed |
-| **Status** | In Progress |
+| **Status** | Complete |
 
 ---
 
@@ -152,6 +152,16 @@ src/
 
 ---
 
+## Implementation Notes (decisions made)
+
+- **Zod import:** `from "zod"` (not `"zod/v4"`) — we have zod 4.4.3 stable; the `/v4` sub-export is only needed when zod 3.x is installed alongside.
+- **`@hookform/resolvers` version:** 5.4.0 — fully compatible with react-hook-form 7.x and zod 4.x.
+- **Form states:** `"idle" | "submitting" | "success" | "error"` — success replaces the form with a confirmation card; error shows inline message with a mailto fallback.
+- **No `asChild` needed on Button:** standard `<Button type="submit">` works fine with new-york style.
+- **Footer links verified:** `/legal` and `/privacy` were already wired in Phase 1 (lines 73, 79 of `Footer.tsx`) — no changes needed.
+- **Legal / Privacy pages:** Both use `PageHero` for consistency. Content is clearly marked as placeholder with italic notes for client review.
+- **Routes:** `/contact` is static (form is client-side); `/api/contact` is dynamic (server route).
+
 ## Exit Condition → Phase 5
 
-All 8 pages are complete and functioning. The site is feature-complete; only SEO, polish, and production deploy remain.
+All 9 routes in build output (✓), lint and typecheck pass (✓), committed and pushed (✓). Site is feature-complete. Phase 5 is SEO, polish, and production deploy.
