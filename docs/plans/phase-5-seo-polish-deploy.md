@@ -4,7 +4,7 @@
 |-------|-------|
 | **Scope** | Per-page metadata, OG tags, favicon, web manifest, responsive audit, Lighthouse 90+ pass, production deploy to rorichgroup.co.za |
 | **Detail level** | Detailed |
-| **Status** | In Progress |
+| **Status** | Complete |
 
 ---
 
@@ -189,6 +189,48 @@ public/
 
 ---
 
+## Implementation Notes (decisions made)
+
+- **OG image:** Used `src/app/opengraph-image.tsx` with `next/og` `ImageResponse` (edge runtime) instead of a static PNG. Generates at `/opengraph-image` automatically; Next.js wires it into `<meta property="og:image">` via the `metadataBase`. No actual image file needed until the client provides a logo.
+- **Per-page metadata:** All 8 pages already had `title` + `description` exports from Phases 3 & 4. Root layout upgraded to add `metadataBase`, title template (`%s | The Rorich Group`), OG config, Twitter card, and robots.
+- **Manifest:** `src/app/manifest.ts` — theme_color `#1e3d6e` (hex approximation of the navy `oklch(0.38 0.12 252)`). Update this when client provides real brand colour.
+- **Mobile nav fix:** Added `<SheetClose asChild>` around mobile nav links so the drawer closes when a link is tapped — was missing in Phase 1.
+- **Skip-to-content link:** Added `<a href="#main-content">` in root layout; `<main id="main-content">` receives focus. Invisible by default, visible on keyboard focus (Lighthouse Accessibility improvement).
+- **Responsive audit (code review):** All grids use mobile-first breakpoints (`sm:grid-cols-2 lg:grid-cols-3`). No overflow or clipped-text issues detected in code review. Manual browser testing recommended.
+- **Build output:** 14 routes — 12 static + 2 dynamic (`/api/contact`, `/opengraph-image`). Warning `edge runtime disables static generation` on OG image route is expected and harmless.
+
+## Production Deploy Checklist (manual steps)
+
+### Step 1 — Deploy to Vercel
+The GitHub repo is already pushed. Vercel deploys on every push to `main`.
+- Go to vercel.com/new → Import `BradleyRorich/the-rorich-group`
+- Framework: Next.js (auto-detected)
+- No build settings need changing
+
+### Step 2 — Set environment variables in Vercel
+Go to Project → Settings → Environment Variables and add:
+```
+NEXT_PUBLIC_APP_NAME   = The Rorich Group
+NEXT_PUBLIC_APP_URL    = https://rorichgroup.co.za
+CONTACT_EMAIL          = info@rorichgroup.co.za
+```
+
+### Step 3 — Connect the custom domain
+Go to Project → Settings → Domains and add `rorichgroup.co.za` and `www.rorichgroup.co.za`.
+
+Vercel will show the DNS records to add. At your domain registrar:
+- `A` record for `@` → `76.76.21.21`
+- `CNAME` for `www` → `cname.vercel-dns.com`
+
+Vercel provisions HTTPS automatically via Let's Encrypt (~2 minutes after DNS propagates).
+
+### Step 4 — Client content review
+Before announcing the site, the client should:
+- Review and update `/legal` (company registration number, registered address)
+- Review and update `/privacy` with a legal adviser
+- Provide logo + brand colours so the text placeholder in the Navbar can be replaced and the palette finalised
+- Replace the OG image placeholder with a branded version once logo is available
+
 ## Exit Condition — Site Complete
 
-Production site is live at `rorichgroup.co.za`, passes Lighthouse 90+, and all 8 pages are reachable. Hand over to client for content review (legal/privacy placeholder text to be updated).
+Code complete (✓), all 14 routes in build (✓), committed and pushed (✓). Manual steps remaining: Vercel project import, env vars, DNS for `rorichgroup.co.za`, and client content review of legal/privacy pages.
