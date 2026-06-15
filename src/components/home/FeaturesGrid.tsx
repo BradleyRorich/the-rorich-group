@@ -1,4 +1,4 @@
-import { CreditCard, Layers, FileText, BookOpen, Tag, Printer } from "lucide-react";
+import { CreditCard, Layers, BookOpen, FolderOpen, Tag, Package } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -9,39 +9,39 @@ import {
 const features = [
   {
     icon: CreditCard,
-    title: "Business Cards",
+    title: "Business Cards & Stationery",
     description:
-      "Standard and premium business cards that make a lasting first impression — matte, gloss, spot UV, and more.",
+      "Standard and premium business cards, branded notepads, and corporate stationery that make a lasting first impression.",
   },
   {
     icon: Layers,
-    title: "Flyers & Brochures",
+    title: "Flyers, Leaflets & Brochures",
     description:
-      "Full-colour A4, A5, and DL flyers and brochures on quality coated stock, single or double-sided.",
-  },
-  {
-    icon: FileText,
-    title: "Document Printing",
-    description:
-      "Crisp mono and colour document printing for reports, manuals, proposals, and business correspondence.",
+      "Full-colour marketing materials from A5 flyers to corporate sales leaflets, application forms, and multi-panel brochures.",
   },
   {
     icon: BookOpen,
-    title: "Carbon Books",
+    title: "Books & Bound Products",
     description:
-      "Custom NCR duplicate and triplicate books for invoices, order forms, receipts, and delivery notes.",
+      "Books, manuals, magazines, and booklets in perfect bind, spiral, and saddle-stitch — from 8 pages to full-length publications.",
+  },
+  {
+    icon: FolderOpen,
+    title: "Folders & Binders",
+    description:
+      "Presentation folders, die-cut folders, training binders with tabbed inserts, and tabbed brochures for a polished professional look.",
   },
   {
     icon: Tag,
-    title: "Black Labels",
+    title: "Labels & Carbon Books",
     description:
-      "Custom black labels in any size or shape — product labelling, asset tags, shelf markers, and retail pricing.",
+      "Custom black labels in any size, plus NCR duplicate and triplicate carbon books for invoices, order forms, and delivery notes.",
   },
   {
-    icon: Printer,
-    title: "Custom Print Jobs",
+    icon: Package,
+    title: "Speciality Print",
     description:
-      "Need something unique? We quote on any print job. If it can be printed, we can do it.",
+      "Packaging boxes, lucky packets, temporary tattoos, and any other custom print requirement — if it can be printed, we can do it.",
   },
 ];
 
@@ -54,7 +54,7 @@ export function FeaturesGrid() {
             What We Print
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Everything your business needs, printed right.
+            A full range of print products — digital up to A3, lithographic up to A1.
           </p>
         </div>
 
