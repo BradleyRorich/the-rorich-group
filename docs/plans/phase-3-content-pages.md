@@ -4,7 +4,7 @@
 |-------|-------|
 | **Scope** | About, Services, Industries, and Products pages; content data files; shared card/panel components |
 | **Detail level** | Detailed |
-| **Status** | In Progress |
+| **Status** | Complete |
 
 ---
 
@@ -138,6 +138,15 @@ src/
 
 ---
 
+## Implementation Notes (decisions made)
+
+- **Data types use `LucideIcon`** directly (not string names) — cleaner TypeScript, no runtime lookup needed.
+- **`PageHero` added** (`src/components/PageHero.tsx`) — shared page-header section (eyebrow, heading, subline on brand-light background) used across all 4 inner pages. Not in the original plan; added to avoid repeating the pattern 4 times.
+- **`Forklift` icon** used for Material Handling — verify this exists in your version of lucide-react if upgrading.
+- **`CardFooter` used in `ProductCard`** to pin the "Enquire" link to the card bottom regardless of description length.
+- **All 4 pages export `metadata`** (title + description) at this stage — ready for Phase 5 SEO pass without changes.
+- **Routes built:** `/about`, `/services`, `/industries`, `/products` — all static, prerendered.
+
 ## Exit Condition → Phase 4
 
-All inner content pages are complete and navigable. Content data is cleanly separated from UI. Phase 4 can begin immediately.
+All 4 pages complete (✓), 6 static routes in build output (✓), committed and pushed (✓). Phase 4 can begin immediately.
