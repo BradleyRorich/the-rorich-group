@@ -3,8 +3,8 @@
 | Field | Value |
 |-------|-------|
 | **Scope** | About, Services, Industries, and Products pages; content data files; shared card/panel components |
-| **Detail level** | High-level |
-| **Status** | Planned |
+| **Detail level** | Detailed |
+| **Status** | In Progress |
 
 ---
 
